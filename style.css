@@ -90,14 +90,14 @@ nav {
 
 /*************** Seccion Proyectos **************************/
 
-.seccion-proyectos{
+.seccion{
     width: 100%;
     min-height: 100vh;
     background-color: aqua;
     padding: 2rem 0;
 }
 
-.seccion-proyectos h2 {
+.seccion h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-family: var(--fuente-titulos);
@@ -148,4 +148,117 @@ nav {
     font-size:2rem;
     color: var(--backgroud-extremos);
 }
+
+.contenedor-sobremi{
+    background-color: red;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid blue;
+}
+
+.texto{
+    width: 32%;
+    font-size: 1.2rem;
+    font-family: var(--fuente-titulos);
+}
+
+.seccion-sobremi{
+    background-color: salmon;
+}
+
+.seccion-formulario{
+    background-color: greenyellow;
+}
+
+.contenedor-formulario{
+    background-color: whitesmoke;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid blue;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario label {
+    font-family: var(--fuente-texto);
+    font-size: 1.3rem;
+    color: black;
+}
+
+.formulario input, .formulario textarea {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid fuchsia;
+    margin-bottom: 35px;
+    padding-top: 2px;
+    outline: none;
+}
+
+.formulario textarea {
+    height: 150px;
+}
+
+.btn-formulario{
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    background-color: orange;
+    width: 90px;
+    height: 50px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    padding: 2rem;
+    background-color: orange;
+    width: 100%;
+    height: 9.5rem;
+    margin: auto;   
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.contenedor-footer p {
+    font-family: var(--fuente-texto);
+    color: black;
+}
+
+.contenedor-footer p:hover{
+    color: blue;
+}
+
+.contenedor-iconos a{
+    padding: 20px;
+    color: black;
+}
+
+.contenedor-iconos a i {
+    font-size: 1.5rem;
+    transition: all 0.6ms;
+}
+
+.contenedor-iconos a i:hover {
+    color: red;
+}
+
 
