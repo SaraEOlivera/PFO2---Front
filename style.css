@@ -13,14 +13,17 @@
     --medida-mobil1: 480px;
     --fuente-texto: 'Nunito Sans', sans-serif;
     --fuente-titulos: 'Work Sans', sans-serif;
+    --size-titulos: 3.5rem;
+    --size-subtitulos: 2.5rem
 
 }
 
 body{
-    width: var(--medida-pc);
+    width: 100%;
     margin: auto;
 }
 
+/*************** NAV *****************************/
 nav {
     padding: 2rem;
     height:9.5rem;
@@ -38,7 +41,7 @@ nav {
 }
 
 .logo-nav i{
-    font-size: 2.5rem;
+    font-size: var(--size-subtitulos);
     color: var(--color-nav);
 }
 
@@ -59,3 +62,90 @@ nav {
     color: var(--color-nav);
     text-decoration: none;
 }
+
+/*************** HEADER **************************/
+
+.main{
+    width: 100%;
+    height:80vh;
+    background-color: yellow;
+    padding: 2.5rem;
+}
+
+.main h1, .proyectos h2{
+    font-size: var(--size-titulos);
+    font-family: var(--fuente-titulos);
+    color: var(--backgroud-extremos);
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.main p{
+    font-size: 1.5em;
+    font-family: var(--fuente-texto);
+    color: var(--backgroud-extremos);
+    text-align: center;
+    padding-top: 1em;
+}
+
+/*************** Seccion Proyectos **************************/
+
+.seccion-proyectos{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aqua;
+    padding: 2rem 0;
+}
+
+.seccion-proyectos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--fuente-titulos);
+    font-size: var(--size-titulos);
+}
+
+.contenedor-proyectos{
+    background-color: rebeccapurple;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem;
+    border-radius: 30px;
+    border: 2px solid orangered;
+}
+
+.proyecto-individual{
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-proyecto{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    background-color: gold;
+    margin-bottom: 10px;
+}
+
+.nombre-proyecto{
+    font-family: var(--fuente-titulos);
+    font-size: 1.2rem;
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+.bi-github {
+    font-size:2rem;
+    color: var(--backgroud-extremos);
+}
+
