@@ -44,7 +44,7 @@ nav {
 
 .logo-nav i{
     font-size: var(--size-subtitulos);
-    color: var(--color-nav);
+    color: var(--color-footer);
     display: inline-block;
     transition: transform .7s ease-in-out;
 }
@@ -67,7 +67,7 @@ nav {
 }
 
 .link-nav{
-    color: var(--color-nav);
+    color: var(--color-footer);
     text-decoration: none;
     transition: ease-in-out;
 }
@@ -108,7 +108,7 @@ nav {
 .seccion{
     width: 100%;
     min-height: 100vh;
-    background-color: aqua;
+    background-color: var(--color-footer);
     padding: 2rem 0;
 }
 
@@ -120,7 +120,7 @@ nav {
 }
 
 .contenedor-proyectos{
-    background-color: rebeccapurple;
+    background-color: var(--backgroud-extremos);
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -129,13 +129,13 @@ nav {
     gap: 30px;
     padding: 2rem;
     border-radius: 30px;
-    border: 2px solid orangered;
+    border: 2px solid var(--backgroud-extremos);
 }
 
 .proyecto-individual{
     width: 30%;
     aspect-ratio: 1 / 1;
-    background-color: chartreuse;
+    background-color: var(--segundo-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -149,8 +149,14 @@ nav {
     height: 150px;
     object-fit: cover;
     display: block;
-    background-color: gold;
     margin-bottom: 10px;
+    opacity: 0.5;
+    border-bottom: 3px solid var(--backgroud-extremos);
+    transition-timing-function: ease-in-out;
+}
+
+.img-proyecto:hover{
+    opacity: 1;
 }
 
 .nombre-proyecto{
@@ -164,8 +170,14 @@ nav {
     color: var(--backgroud-extremos);
 }
 
+/************* Seccion Sobre mi ************************/
+
+.seccion-sobremi{
+    background-color: var(--segundo-color);
+}
+
 .contenedor-sobremi{
-    background-color: red;
+    background-color: var(--backgroud-extremos);
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -174,30 +186,28 @@ nav {
     gap: 40px;
     padding: 2rem;
     border-radius: 20px;
-    border: 2px solid blue;
+    border: 2px solid var(--color-footer);
 }
 
 .texto{
     width: 32%;
     font-size: 1.2rem;
     font-family: var(--fuente-titulos);
+    color: #cc8800;
 }
 
-.seccion-sobremi{
-    background-color: salmon;
-}
-
+/***************** Seccion Formulario *********************************/
 .seccion-formulario{
-    background-color: greenyellow;
+    background-color: var(--backgroud-extremos);
 }
 
 .contenedor-formulario{
-    background-color: whitesmoke;
+    background-color: var(--color-footer);
     width: 60%;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 20px;
-    border: 2px solid blue;
+    border: 5px solid var(--segundo-color);
 }
 
 .formulario{
@@ -210,14 +220,14 @@ nav {
 .formulario label {
     font-family: var(--fuente-texto);
     font-size: 1.3rem;
-    color: black;
+    color: var(--backgroud-extremos);
 }
 
 .formulario input, .formulario textarea {
-    background-color: whitesmoke;
+    background-color: var(--color-footer);
     border: none;
     border-radius: 0px;
-    border-bottom: 2px solid fuchsia;
+    border-bottom: 2px solid var(--segundo-color);
     margin-bottom: 35px;
     padding-top: 2px;
     outline: none;
@@ -229,10 +239,11 @@ nav {
 
 .btn-formulario{
     font-family: 'Nunito Sans', sans-serif;
-    color: black;
-    background-color: orange;
+    color: var(--backgroud-extremos);
+    background-color: var(--segundo-color);
     width: 90px;
     height: 50px;
+    border: 1px solid var(--segundo-color);
     border-radius: 7px;
     text-align: center;
     font-size: 1.2rem;
@@ -242,7 +253,7 @@ nav {
 
 footer {
     padding: 2rem;
-    background-color: var(--backgroud-extremos);
+    background-color: var(--segundo-color);
     width: 100%;
     height: 9.5rem;
     margin: auto;   
@@ -257,7 +268,7 @@ footer {
 
 .contenedor-footer p {
     font-family: var(--fuente-texto);
-    color: var(--color-footer);
+    color: var(--backgroud-extremos);
     cursor: pointer;
 }
 
@@ -267,13 +278,13 @@ footer {
 
 .contenedor-iconos a{
     padding: 20px;
-    color: var(--color-footer);
+    color: var(--backgroud-extremos);
 }
 
 .contenedor-iconos a i {
     font-size: 1.5rem;
     transition: all 0.6ms;
-    color: var(--color-footer);
+    color: var(--backgroud-extremos);
 }
 
 .contenedor-iconos a i:hover {
