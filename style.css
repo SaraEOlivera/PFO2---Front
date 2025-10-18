@@ -253,23 +253,29 @@ nav {
 .btn-formulario{
     font-family: 'Nunito Sans', sans-serif;
     color: var(--backgroud-extremos);
-    /* background-color: var(--segundo-color); */
-    background-image: linear-gradient(90deg, #cc8800 20%,  #b37700, #996600, #805500, #32384d);
+    background-image: linear-gradient(90deg, #cc8800 20%,  #b37700, #996600, #805500,#664400, #32384d);
     box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
     width: 90px;
     height: 50px;
-    border: 1px solid var(--segundo-color);
+    border: 1px solid var(--backgroud-extremos);
     border-radius: 7px;
     text-align: center;
     font-size: 1.2rem;
     cursor: pointer;
-    transition-timing-function: ease-in-out;
+    animation-name: botonEnviar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;
 }
 
-.btn-formulario:hover{
+@keyframes botonEnviar {
+    100% {background: linear-gradient(90deg, #32384d 0%,#664400, #b37700, #cc8800 100%)}
+}
+
+/* .btn-formulario:hover{
     background: linear-gradient(90deg, #32384d 0%,#b37700, #cc8800 100%);
     border: 2px solid var(--backgroud-extremos);
-}
+} */
 
 /*****************Footer**************************************/
 
