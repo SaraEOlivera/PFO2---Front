@@ -212,7 +212,7 @@ nav {
 
 /***************** Seccion Formulario *********************************/
 .seccion-formulario{
-    background-color: var(--backgroud-extremos);
+    background-color: var(--color-footer);
 }
 
 .contenedor-formulario{
@@ -253,7 +253,7 @@ nav {
 .btn-formulario{
     font-family: 'Nunito Sans', sans-serif;
     color: var(--backgroud-extremos);
-    background-image: linear-gradient(90deg, #cc8800 20%,  #b37700, #996600, #805500,#664400, #32384d);
+    background-image: linear-gradient(90deg, #cc8800 20%, #cc8800 20%,  #b37700, #bfbfbf);
     box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
     width: 90px;
     height: 50px;
@@ -269,7 +269,7 @@ nav {
 }
 
 @keyframes botonEnviar {
-    100% {background: linear-gradient(90deg, #32384d 0%,#664400, #b37700, #cc8800 100%)}
+    100% {background: linear-gradient(90deg, #bfbfbf 0%,#b3b3b3, #b37700, #cc8800 100%)}
 }
 
 
@@ -277,7 +277,7 @@ nav {
 
 footer {
     padding: 2rem;
-    background-color: var(--segundo-color);
+    background-color: var(--backgroud-extremos);
     width: 100%;
     height: 9.5rem;
     margin: auto;   
@@ -292,27 +292,39 @@ footer {
 
 .contenedor-footer p {
     font-family: var(--fuente-texto);
-    color: var(--backgroud-extremos);
+    color: var(--color-footer);
     cursor: pointer;
 }
 
 .contenedor-footer p:hover{
-    color: var(--footer-hover);
+    color: var(--segundo-color);
+    font-style: italic;
 }
 
-.contenedor-iconos a{
-    padding: 20px;
-    color: var(--backgroud-extremos);
+.contenedor-iconos{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
 }
 
-.contenedor-iconos a i {
+.iconos{
+    /* padding: 20px; */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition-timing-function: ease-in-out;
     font-size: 1.5rem;
-    transition: all 0.6ms;
+    color: var(--color-footer);
+}
+
+.iconos:hover{
+    background-color: var(--segundo-color);
     color: var(--backgroud-extremos);
 }
 
-.contenedor-iconos a i:hover {
-    color: var(--footer-hover);
-}
 
 
