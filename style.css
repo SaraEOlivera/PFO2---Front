@@ -73,8 +73,9 @@ nav {
 }
 
 .link-nav:hover{
-    border-bottom: 2px solid var(--segundo-color);
-    border-top: 2px solid var(--segundo-color);
+    color: var(--segundo-color);
+    border-bottom: 2px solid var(--color-footer);
+    /* border-top: 2px solid var(--segundo-color); */
 }
 
 /*************** HEADER **************************/
@@ -165,10 +166,23 @@ nav {
     margin: 1.2rem 0 1.2rem 0;
 }
 
-.bi-github {
+.contenedor-iconos-proyectos{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.logo-proyecto i {
     font-size:2rem;
     color: var(--backgroud-extremos);
+    display: inline-block;
+    transition: transform .7s ease-in-out;
 }
+
+.logo-proyecto:hover i{
+    transform: rotate(360deg);
+}
+
+
 
 /************* Seccion Sobre mi ************************/
 
