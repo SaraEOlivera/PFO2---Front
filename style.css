@@ -382,7 +382,7 @@ footer {
 
     .main {
         width: 100%;
-    } 
+    }
 
 
     .main p {
@@ -478,7 +478,129 @@ footer {
 
 
 /* Tablet vertical */
-/* @media (max-width: 768px) {} */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*************** NAV ****************/
+
+
+    .contenedor-nav {
+        padding: 1rem 2rem;
+    }
+
+    .logo-nav i {
+        font-size: 3rem;
+    }
+
+    .nav-derecha {
+        font-size: 1.5em;
+    }
+
+    .nav-derecha ul {
+        gap: 2em;
+    }
+
+    /*************** HEADER **************************/
+
+    .main {
+        width: 100%;
+    }
+
+
+    .main p {
+        font-size: 1.8em;
+        /* font-family: var(--fuente-texto);
+        color: var(--backgroud-extremos);
+        text-align: center;
+        padding-top: 1em; */
+    }
+
+    /********* Estilo gral secciones  *******/
+
+    .seccion {
+        height: auto;
+    }
+
+    /* ************** Proyectos ****************/
+
+    .contenedor-proyectos {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .proyecto-individual {
+        width: 45%;
+    }
+
+    .img-proyecto {
+        height: 130px;
+    }
+
+    .nombre-proyecto {
+        font-size: 1.2rem;
+    }
+
+    .logo-proyecto i {
+        font-size: 2rem;
+    }
+
+
+    /************* Seccion Sobre mi ****************/
+
+    .contenedor-sobremi {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .texto {
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /**************** Seccion Formulario **************/
+
+    .contenedor-formulario {
+        width: 80%;
+    }
+
+
+    .formulario label {
+        font-size: 1.5rem;
+    }
+
+    .formulario textarea {
+        height: 200px;
+    }
+
+    .btn-formulario {
+        width: 120px;
+        height: 90%;
+        font-size: 1.3rem;
+    }
+
+
+    /*****************Footer*********************/
+
+    footer {
+        height: auto;
+    }
+
+    .contenedor-footer p {
+        font-size: 1.2rem;
+    }
+
+    .iconos {
+        font-size: 1.5rem;
+    }
+
+
+}
 
 /* Mobil1 */
 /* @media (max-width: 480px) {} */
