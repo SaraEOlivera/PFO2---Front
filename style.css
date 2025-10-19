@@ -512,10 +512,6 @@ footer {
 
     .main p {
         font-size: 1.8em;
-        /* font-family: var(--fuente-texto);
-        color: var(--backgroud-extremos);
-        text-align: center;
-        padding-top: 1em; */
     }
 
     /********* Estilo gral secciones  *******/
@@ -603,7 +599,135 @@ footer {
 }
 
 /* Mobil1 */
-/* @media (max-width: 480px) {} */
+@media screen and (min-width: 375px) and (max-width: 480px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*************** NAV ****************/
+
+    .contenedor-nav {
+        padding: 1rem;
+    }
+
+    .logo-nav i {
+        display: none;
+    }
+
+    .nav-derecha {
+        font-size: 1.3em;
+    }
+
+    .nav-derecha ul {
+        gap: 2em;
+    }
+
+    /*************** HEADER **************************/
+
+    .main {
+        width: 100%;
+    }
+
+    .main h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .main p {
+        font-size: 1.3rem;
+    }
+
+    /********* Estilo gral secciones  *******/
+
+    .seccion {
+        height: auto;
+    }
+
+    .seccion h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ************** Proyectos ****************/
+
+    .contenedor-proyectos {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .proyecto-individual {
+        width: 85%;
+    }
+
+    .img-proyecto {
+        height: 130px;
+    }
+
+    .nombre-proyecto {
+        font-size: 1.2rem;
+    }
+
+    .logo-proyecto i {
+        font-size: 2rem;
+    }
+
+
+    /************* Seccion Sobre mi ****************/
+
+    .contenedor-sobremi {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .texto {
+        width: 80%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /**************** Seccion Formulario **************/
+
+    .contenedor-formulario {
+        width: 80%;
+    }
+
+
+    .formulario label {
+        font-size: 1.2rem;
+    }
+
+    .formulario textarea {
+        height: 200px;
+    }
+
+    .btn-formulario {
+        width: 100px;
+        height: 90%;
+        font-size: 1.3rem;
+    }
+
+
+    /*****************Footer*********************/
+
+    footer {
+        height: auto;
+    }
+
+    .contenedor-footer p {
+        font-size: 1rem;
+    }
+
+    .contenedor-iconos{
+        gap: 1.5rem;
+    }
+
+    .iconos {
+        font-size: 1rem;
+    }
+
+}
 
 /* Mobil 2*/
 /* @media (max-width: 375px) {} */
